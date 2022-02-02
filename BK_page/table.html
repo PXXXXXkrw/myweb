@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tables</title>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            table{
+                width: 100%;
+                background-color: rgb(161, 255, 216);
+            }
+            th{
+                background-color: rgb(24, 168, 108);
+            }
+            td{
+                background-color: rgb(255, 255, 255);   
+                text-align: center;
+            }
+            </style>           
+    </head>
+    <body>
+      <nav>
+        <a href="index.html">Portfolio</a>
+      </nav>
+        <table>
+    <tr>
+      <th>ชั่วโมงที่</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th></th>
+      <th>4</th>
+      <th>5</th>
+    </tr>
+    <tr>
+      <td style="width: 15%">เวลา</td>
+      <td style="width: 15%">08.30-09.20</td>
+      <td style="width: 15%">09.30-10.20</td>
+      <td style="width: 15%">10.30-12.00</td>
+      <td rowspan="3" style="width: 10%">Break</td>
+      <td style="width: 15%">13.00-13.50</td>
+      <td style="width: 15%">14.00-14.50</td>
+    </tr>
+    <tr>
+      <td style="background-color: rgb(161, 255, 216);">จันทร์</td>
+      <td style="background-color: rgb(161, 255, 216);">ว21102<br>ครุพรพิมล</td>
+      <td style="background-color: rgb(161, 255, 216);">อ21102<br>ครูจารุวรรณ</td>
+      <td style="background-color: rgb(161, 255, 216);">ญ20202<br>ครูจิรนนท์</td>
+      <td colspan="2" style="background-color: rgb(161, 255, 216);">เพิ่มเติมกลุ่ม 2</td>
+    </tr>
+    <tr>
+        <td>อังคาร</td>
+        <td colspan="2">ว20202<br>ครูถนัดศรี</td>
+        <td>ง21101<br>ครูสมพร/ครูศราวุธ</td>
+        <td>ท21102<br>ครูภาวิณี</td>
+        <td>พ21103<br>ครูพิมพ์สิริ</td>
+      </tr>
+           </table>
+    </body>
+</html>

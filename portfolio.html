@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/header1.png" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/header2.png" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/header3.png" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/krw.png" style="width:100%">
+        <div class="text">Caption Four</div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles 
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>-->
+
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="http://www.pccpl.ac.th/">PCSHSPL</a>
+      <a href="about.html">About me</a>
+  </div>
+        <div class="main">
+            <h2>History of Ive</h2>
+            <img src="images/Ive.jpg"width="30%" hight="30%">
+            <p>IVE เป็นวงเกิร์ลกรุ๊ปน้องใหม่จากต้นสังกัด Starship Entertainment </p>
+            <p>IVE (ไอฟ์) หลังจากเพิ่งเดบิวต์ได้ไม่นานก็สามารถส่งซิงเกิลเปิดตัวอย่าง ELEVEN</p>
+            <p>คว้ารางวัลจากรายการเพลงของเกาหลีใต้ จนสร้างสถิติใหม่กลายเป็นวงเกิร์ลกรุ๊ปน้องใหม่ที่คว้าแชมป์จากรายการเพลงเร็วที่สุด</p>
+            <h2>History of Stray Kids</h2>
+            <img src="images/Stray.Kids.jpg"width="30%" hight="30%">
+            <p>‘Stray Kids’ บอยกรุ๊ปสไตล์ฮิปฮ็อปจากค่าย JYP Entertainment ที่มาพร้อมเอกลักษณ์ในการแสดงที่แข็งแรง ดุดัน และชวนให้ผู้ชมได้รู้สึกทึ่งในทุกครั้งของการแสดง</p>
+            <p>Stray Kids ได้ปล่อยผลงาน MV เพลง ‘Hellevator‘ ก่อนจะปล่อยผลงานอัลบั้ม Mixtape ซึ่งเป็นผลงานพรีเดบิวต์ซึ่งได้รับกระแสตอบรับจากแฟนคลับต่างชาติไม่น้อย</p>
+            <p>พวกเขาได้เดบิวต์อย่างเป็นทางการในวันที่ 25 มีนาคม 2018 กับเพลงเปิดตัว ‘District 9’</p>
+            <p>ซึ่งสมาชิกในวงเองก็ได้โชว์ความสามารถร่วมเขียนและเรียบเรียงเพลงต่าง ๆ ในอัลบั้มกันตั้งแต่เปิดตัวเลยทีเดียว</p>
+            <p>ก่อนที่พวกเขาจะเริ่มได้รางวัลในรายการเพลงครั้งแรกกับเพลง ‘MIROH’ ในปี 2019 เป็นการต่อยอดความสำเร็จขึ้นไปอีกขั้น</p>
+            <h2>History of Asepa</h2>
+            <img src="images/Asepa.jpg"width="30%" hight="30%">
+            <p>“aespa” เกิร์ลกรุ๊ปวงใหม่ล่าสุดของค่าย SM Entertainment</p>
+            <p>สำหรับชื่อวง “aespa” นั้นเกิดจากการรวมคำว่า “æ” ที่มาจาก “Avatar X Experience” เข้ากับคำว่า “aspect”</p>
+            <p>ที่มีความหมายว่ามุมมอง โดยมีแผนที่จะมานำเสนอหลากหลายกิจกรรมการโปรโมตแบบใหม่</p>
+            <p>ภายใต้ธีม "การสัมผัสประสบการณ์โลกใบใหม่ ผ่านการเผชิญหน้ากับ ‘avatar’ (ตัวตนอื่น ๆ ของคุณ)”</p>
+          </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+p {
+    text-align: center;
+    color: rgb(0, 88, 44);
+}
+
+h1 {
+    text-align: right;
+    color: rgb(0, 99, 53);
+}
+table,
+td,
+tr {
+    border: 1px solid rgb(0, 58, 29);
+    border-collapse: collapse;
+    width: 50%;
+}
+#fname{
+    border: 1px solid rgb(0, 58, 29);
+    border-collapse: collapse;
+    /*width: 100%;*/
+}
+.tbl{
+    color: rgb(0, 58, 29);
+}
